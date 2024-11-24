@@ -1,0 +1,308 @@
+body {
+  font-family: "Somar";
+}
+
+.row {
+  --bs-gutter-x: unset;
+}
+
+* {
+  transition: all 0.5s;
+}
+
+/* Header */
+
+#header {
+  height: 100svh;
+  background-image: url("/app/images/header.jpg");
+  background-size: cover;
+  align-content: center;
+  justify-items: center;
+  text-shadow: 0px 5px black;
+}
+
+#header .logo {
+  width: 400px;
+  background-color: white;
+  border-radius: 100px;
+  padding: 50px;
+  margin-bottom: 75px;
+  box-shadow: 0 0px 25px 10px hsl(0deg 0% 0% / 25%);
+}
+
+#header h1 {
+  font-weight: 900;
+  color: white;
+  font-size: 75px;
+}
+
+/* About */
+
+#about .about {
+  align-content: center;
+  max-width: 800px;
+}
+
+#about img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 100% 50%;
+}
+
+#about h3 {
+  font-weight: 700;
+  color: #50acd7;
+  font-size: 30px;
+}
+#about h2 {
+  font-weight: 900;
+  color: #353978;
+  font-size: 40px;
+}
+#about p {
+  font-weight: 500;
+  color: #666666;
+  font-size: 18px;
+}
+
+/* Aims */
+
+#aims h2 {
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+  color: #353978;
+  margin-bottom: 75px;
+}
+
+#aims h3 {
+  font-size: 20px;
+  font-weight: 900;
+  color: #666666;
+}
+
+#aims h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #666666;
+}
+
+#aims svg {
+  width: 75px;
+  position: absolute;
+  left: 110px;
+  top: -40px;
+}
+
+#aims .aim {
+  text-align: center;
+}
+
+/* #aims .col div:hover path {
+  filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.3));
+} */
+
+#aims .aim div {
+  border: 3px solid #353978;
+  padding: 40px 0px 20px 0px;
+  border-radius: 30px;
+  display: inline-block;
+  width: 300px;
+  position: relative;
+  transition: all 0.5s;
+  cursor: default;
+}
+
+#aims .aim div:hover {
+  transform: translateY(-10px);
+}
+#aims .aim div:hover svg {
+  transform: translateY(-10px);
+}
+
+/* Services */
+
+#services {
+  background-color: #353978;
+  color: #e6e6e6;
+  padding-bottom: 100px;
+}
+
+#services img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 100% 50%;
+}
+
+#services h2 {
+  font-weight: 900;
+  color: #6ebade;
+  font-size: 40px;
+}
+
+#services h3 {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+#services p {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+#services .bolder {
+  font-weight: 700;
+}
+
+#services .services {
+  width: 1200px;
+  justify-self: center;
+  color: white;
+}
+
+#services .service svg {
+  width: 75px;
+  margin-bottom: 15px;
+}
+
+#services .service {
+  width: 160px;
+  justify-self: center;
+  border: 3px solid white;
+  border-radius: 30px 30px 100px 100px;
+  padding: 15px 10px 40px 10px;
+  position: relative;
+  cursor: default;
+}
+
+#services .video {
+  text-align: -webkit-left;
+}
+
+#services .plyr__poster {
+  background-size: cover;
+}
+
+#services .plyr {
+  max-width: 750px;
+  aspect-ratio: 1.77777;
+  border-radius: 20px;
+}
+
+#services .service:hover {
+  transform: translateY(-10px);
+}
+
+#services .point {
+  position: absolute;
+  background-color: white;
+  border-radius: 1000px;
+  width: 50px;
+  height: 50px;
+  color: black;
+  align-content: center;
+  left: 55px;
+  bottom: -25px;
+}
+
+#services .service:hover .point {
+  transform: translateY(40px);
+}
+
+#services h4 {
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 1199px) {
+  /* Services */
+
+  #services .services {
+    width: unset;
+    justify-self: unset;
+  }
+}
+
+@media (max-width: 991px) {
+  /* Header */
+  #header h1 {
+    font-size: 60px;
+  }
+
+  /* About */
+
+  #about .about {
+    max-width: unset;
+  }
+
+  /* Services */
+  #services .video {
+    text-align: -webkit-center;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Header */
+  #header h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 575px) {
+  /* Header */
+  #header .logo {
+    width: 300px;
+    padding: 30px;
+    margin-bottom: 75px;
+  }
+
+  #header h1 {
+    font-size: 35px;
+  }
+
+  #services .plyr {
+    aspect-ratio: 0.5625;
+  }
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: "Somar";
+  src: url("/app/fonts/Somar-Black.woff2") format("woff2"),
+    url("/app/fonts/Somar-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Somar";
+  src: url("/app/fonts/Somar-Bold.woff2") format("woff2"),
+    url("/app/fonts/Somar-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Somar";
+  src: url("/app/fonts/Somar-Medium.woff2") format("woff2"),
+    url("/app/fonts/Somar-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Somar";
+  src: url("/app/fonts/Somar-Light.woff2") format("woff2"),
+    url("/app/fonts/Somar-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
