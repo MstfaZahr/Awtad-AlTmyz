@@ -1,5 +1,6 @@
 body {
   font-family: "Somar";
+  background-color: white;
 }
 
 .row {
@@ -38,6 +39,10 @@ body {
 
 /* About */
 
+#about {
+  background-color: white;
+}
+
 #about .about {
   align-content: center;
   max-width: 800px;
@@ -66,7 +71,29 @@ body {
   font-size: 18px;
 }
 
+#about button {
+  padding: 10px 25px;
+  border-radius: 10px;
+  color: white;
+  background-color: #50acd7;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+#about button:hover {
+  transform: translateY(-5px);
+  background-color: hsl(199 63% 50% / 1);
+  box-shadow: 0px 5px 10px 2px hsl(0deg 0% 0% / 10%);
+}
+
 /* Aims */
+
+#aims {
+  background-color: white;
+  padding: 100px 0px 100px 0px;
+}
 
 #aims h2 {
   font-size: 40px;
@@ -126,7 +153,9 @@ body {
 #services {
   background-color: #353978;
   color: #e6e6e6;
+  padding-top: 50px;
   padding-bottom: 100px;
+  border-radius: 50px 50px 50px 50px;
 }
 
 #services img {
@@ -216,6 +245,41 @@ body {
   margin-bottom: 0px;
 }
 
+/* Footer */
+
+#footer {
+  background-color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
+#footer * {
+  color: black;
+  text-decoration: none;
+}
+
+#footer .row {
+  row-gap: 30px;
+}
+
+#footer h2 {
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+  color: #353978;
+  margin-bottom: 50px;
+}
+
+#footer h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#footer a:hover * {
+  transform: translateY(-5px);
+  color: hsla(0, 0%, 0%, 0.7);
+}
+
 /* Responsive Design */
 
 @media (max-width: 1199px) {
@@ -242,6 +306,11 @@ body {
   /* Services */
   #services .video {
     text-align: -webkit-center;
+  }
+
+  /* Footer */
+  #footer h3 {
+    font-size: 17px;
   }
 }
 
