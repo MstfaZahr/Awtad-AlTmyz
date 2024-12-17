@@ -153,8 +153,8 @@ body {
 #services {
   background-color: #353978;
   color: #e6e6e6;
-  padding-top: 50px;
-  padding-bottom: 100px;
+  padding-top: 25px;
+  padding-bottom: 75px;
   border-radius: 50px 50px 50px 50px;
 }
 
@@ -189,8 +189,8 @@ body {
   width: 1200px;
   justify-self: center;
   color: white;
-  margin-bottom: 75px;
-  row-gap: 75px;
+  margin-bottom: 50px;
+  row-gap: 50px;
 }
 
 #services .service svg {
@@ -259,7 +259,7 @@ body {
   width: 1200px;
   justify-self: center;
   color: white;
-  row-gap: 75px;
+  row-gap: 50px;
 }
 
 #services .wider {
@@ -309,7 +309,7 @@ body {
 
 #footer img {
   width: 75px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 /* Map */
@@ -343,6 +343,10 @@ body {
   transform: translateY(5px);
   border-radius: 25px;
   box-shadow: 0px 0px 30px 10px hsl(0deg 0% 100% / 10%);
+}
+
+div:has(.gmnoprint) {
+  display: none;
 }
 
 /* Responsive Design */
