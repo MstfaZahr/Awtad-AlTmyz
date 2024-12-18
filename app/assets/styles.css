@@ -23,18 +23,18 @@ body {
 }
 
 #header .logo {
-  width: min(50vh, 50vw);
+  width: min(50svh, 50svw);
   background-color: white;
   border-radius: 25%;
   padding: 1%;
-  margin-bottom: min(10vh, 10vw);
+  margin-bottom: min(10svh, 10svw);
   box-shadow: 0 0px 25px 10px hsl(0deg 0% 0% / 25%);
 }
 
 #header h1 {
   font-weight: 900;
   color: white;
-  font-size: min(10vh, 10vw);
+  font-size: min(10svh, 10svw);
 }
 
 /* About */
