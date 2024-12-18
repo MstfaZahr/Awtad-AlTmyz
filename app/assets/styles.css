@@ -23,18 +23,18 @@ body {
 }
 
 #header .logo {
-  width: 400px;
+  width: min(50vh, 50vw);
   background-color: white;
-  border-radius: 100px;
-  padding: 50px;
-  margin-bottom: 75px;
+  border-radius: 25%;
+  padding: 1%;
+  margin-bottom: min(10vh, 10vw);
   box-shadow: 0 0px 25px 10px hsl(0deg 0% 0% / 25%);
 }
 
 #header h1 {
   font-weight: 900;
   color: white;
-  font-size: 75px;
+  font-size: min(10vh, 10vw);
 }
 
 /* About */
@@ -366,9 +366,9 @@ div:has(.gmnoprint) {
 
 @media (max-width: 991px) {
   /* Header */
-  #header h1 {
+  /* #header h1 {
     font-size: 60px;
-  }
+  } */
 
   /* About */
 
@@ -389,14 +389,14 @@ div:has(.gmnoprint) {
 
 @media (max-width: 767px) {
   /* Header */
-  #header h1 {
+  /* #header h1 {
     font-size: 50px;
-  }
+  } */
 }
 
 @media (max-width: 575px) {
   /* Header */
-  #header .logo {
+  /* #header .logo {
     width: 300px;
     padding: 30px;
     margin-bottom: 75px;
@@ -404,7 +404,9 @@ div:has(.gmnoprint) {
 
   #header h1 {
     font-size: 35px;
-  }
+  } */
+
+  /* Services */
 
   #services .plyr {
     aspect-ratio: 0.5625;
